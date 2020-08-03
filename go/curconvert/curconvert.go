@@ -21,9 +21,9 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/credentials/stscreds"
-	"github.com/xitongsys/parquet-go/ParquetFile"
-	"github.com/xitongsys/parquet-go/ParquetWriter"
-	"github.com/xitongsys/parquet-go/SchemaHandler"
+	"github.com/kukuh/parquet-go/ParquetFile"
+	"github.com/kukuh/parquet-go/ParquetWriter"
+	"github.com/kukuh/parquet-go/SchemaHandler"
 )
 
 //
