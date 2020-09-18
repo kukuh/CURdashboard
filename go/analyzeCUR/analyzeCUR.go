@@ -229,7 +229,7 @@ func sendQuery(svc *athena.Athena, db string, sql string, account string, region
 		if err != nil {
 			return results, errors.New("Error Querying Athena, GetQueryExecution: " + err.Error())
 		}
-		if *qrop.QueryExecution.Status.State != "RUNNING" {
+		if (*qrop.QueryExecution.Status.State != "RUNNING" && *qrop.QueryExecution.Status.State != "QUEUED") {
 			break
 		}
 		time.Sleep(duration)
